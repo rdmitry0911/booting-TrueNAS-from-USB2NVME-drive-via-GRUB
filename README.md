@@ -36,6 +36,7 @@ and then copy grub folder from /boot to tftp_root. Put grub-pxe386 also to tftp_
 edit /etc/dnsmasq.conf of your dhcp server and put there these lines:
 
 dhcp-mac=set:truenas,XX:XX:XX:XX:XX:XX
+
 dhcp-boot=tag:truenas,/grub/grub-pxe386,,172.16.66.99
 
 where XX:XX:XX:XX:XX:XX is MAC address of your TrueNAS and 172.16.66.100 is ip address of your tftp server
