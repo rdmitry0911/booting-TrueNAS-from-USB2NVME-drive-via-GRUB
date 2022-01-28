@@ -30,12 +30,12 @@ menuentry "TrueNAS" --class freebsd --class bsd --class os {
 
 To prepare GRUB booting via pxe in ubuntu/debian we have to create a bootable image of GRUB with this command:
 
-grub-mkimage -d /usr/lib/grub/i386-pc/ -O i386-pc-pxe -o ./grub-pxe386 -p '/grub' pxe tftp part_gpt zfs bsd nativedisk biosdisk
+    grub-mkimage -d /usr/lib/grub/i386-pc/ -O i386-pc-pxe -o ./grub-pxe386 -p '/grub' pxe tftp part_gpt zfs bsd nativedisk biosdisk
 
 and then copy grub folder from /boot to tftp_root. Put grub-pxe386 also to tftp_root/grub then
 edit /etc/dnsmasq.conf of your dhcp server and put there these lines:
 
-dhcp-mac=set:truenas,XX:XX:XX:XX:XX:XX
-dhcp-boot=tag:truenas,/grub/grub-pxe386,,172.16.66.99
+    dhcp-mac=set:truenas,XX:XX:XX:XX:XX:XX
+    dhcp-boot=tag:truenas,/grub/grub-pxe386,,172.16.66.99
 
 where XX:XX:XX:XX:XX:XX is MAC address of your TrueNAS and 172.16.66.100 is ip address of your tftp server
