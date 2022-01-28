@@ -1,0 +1,1 @@
+# booting-TrueNAS-from-USB2NVME-drive-via-GRUB
