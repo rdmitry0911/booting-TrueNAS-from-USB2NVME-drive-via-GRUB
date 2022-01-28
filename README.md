@@ -1,4 +1,4 @@
-# booting TrueNAS from USB2NVME or USB2SSD drive via GRUB
+# booting TrueNAS from USB2SSD or USB2NVME drive via GRUB
 
 For those, like me, who would like to install TrueNAS to USB3.1 Solid Flash Drive like this one: https://www.aliexpress.com/item/4000534378012.html and have problems to boot TrueNAS from it as BIOS/UEFI does not see this drive. 
 
