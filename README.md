@@ -2,7 +2,7 @@
 
 For those, like me, who would like to install TrueNAS to USB3.1 Solid Flash Drive like this one: https://www.aliexpress.com/item/4000534378012.html and have problems to boot TrueNAS from it as BIOS/UEFI does not see this drive. 
 
-To boot from it we either have to make a separate usb drive, that is visible by BIOS/UEFI with GRUB on it or make a pxe booting of GRUB. In either case we have to add this menu enry to GRUB:
+To boot from it we either have to make a separate bootable usb drive, that is visible by BIOS/UEFI with GRUB on it or make a pxe booting of GRUB. In either case we have to add this menu enry to GRUB:
 
 
 menuentry "TrueNAS" --class freebsd --class bsd --class os {
