@@ -6,6 +6,7 @@ To boot from it we either have to make a separate usb drive, that is visible by 
 
 
 menuentry "TrueNAS" --class freebsd --class bsd --class os {
+    
     insmod part_gpt
     insmod zfs
     insmod bsd
